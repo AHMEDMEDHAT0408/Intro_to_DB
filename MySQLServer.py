@@ -17,7 +17,7 @@ def create_database():
             print("Database 'alx_book_store' created successfully!")
 
     except Error as e:
-        print(f"Error: {e}")
+        print(f"Error: {e}")  # Handles exceptions of type mysql.connector.Error
     
     finally:
         if cursor is not None:
